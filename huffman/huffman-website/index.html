@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Huffman Encoder/Decoder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Huffman Encoder/Decoder</h1>
+
+    <div class="section">
+      <h2>Compress .txt File</h2>
+      <input type="file" id="compress-input" accept=".txt">
+      <button onclick="compressFile()">Compress and Download</button>
+      <div id="compress-result"></div>
+    </div>
+
+    <div class="section">
+      <h2>Decompress .huf File</h2>
+      <input type="file" id="decompress-input" accept=".huf">
+      <button onclick="decompressFile()">Decompress and Download</button>
+      <div id="decompress-result"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
